@@ -90,4 +90,5 @@ Linux ist ein Mehrbenutzersystem, das eine starke Prozessverwaltung bietet. Jede
 ---
 ## Fazit
 
-Linux bietet eine hohe Flexibilität und Sicherheit durch die Trennung von Benutzerrechten und der Open-Source-Natur. Das Verständnis der Verzeichnisstruktur, Zugriffsrechte und Systemverwaltung ist entscheidend für die Arbeit mit Linux, besonders bei administrativen Aufgaben.
+>Linux bietet eine hohe Flexibilität und Sicherheit durch die Trennung von Benutzerrechten und der Open-Source-Natur. Das Verständnis der Verzeichnisstruktur, Zugriffsrechte und Systemverwaltung ist entscheidend für die Arbeit mit Linux, besonders bei administrativen Aufgaben.
+

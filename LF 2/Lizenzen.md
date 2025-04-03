@@ -1,3 +1,7 @@
+Die _Creative Marketing GmbH_ besitzt 21 PCs. Die PCs sind mit 2 Servern verbunden, ein Server für E-Mails und der andere Server für allgemeine Dateien. 5 PCs werden für Grafikdesign-Arbeiten verwendet und sind mit Design-Software bestückt. Alle PCs sind mit einem Betriebssystem und einer E-Mail-/Textverarbeitungs-Software ausgestattet.  
+
+Sie untersuchen, welche Lizenzen die _Creative Marketing GmbH_ benötigt, damit die bestehenden gesetzlichen Bestimmungen erfüllt werden. Das Budget der Firma ist limitiert und bevorzugt für die Betriebssysteme kostengünstige Varianten.
+
 ## 1. Softwarelizenz
 
 Rechtliche Vereinbarung, wie eine Software benutzt werden darf. Bestimmt die Rechte und Pflichten des Users.
