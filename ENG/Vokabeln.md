@@ -1,3 +1,8 @@
+---
+
+---
+##  1. J
+
 | Term                 | Translation             |
 | -------------------- | ----------------------- |
 | Ground               | Erdung                  |
@@ -97,3 +102,37 @@
 | underperform               | hinter den Erwartungen zurückbleiben, unterdurchschnittlich abschneiden |
 | persuade                   | überzeugen, jmd. zu etwas bewegen                                       |
 | recommendations            | Empfehlungen                                                            |
+
+## 2. J
+
+| English       | Context                                                                 | German                          |
+|---------------|-------------------------------------------------------------------------|---------------------------------|
+| to perceive (noun: perception) | Bluetooth antennas perceive within their own range of frequencies. | wahrnehmen |
+| approach (verb: to approach) | But most drone swarms use a different approach. | Herangehensweise |
+| to tackle | Researchers tackled how their school of robotic fish would communicate. | angehen, in Angriff nehmen |
+| omni- | Two wide angle cameras created an almost omnidirectional field of vision. | all- |
+| to deploy (noun: deployment) | But the Blueswarm isn’t ready to be deployed in the wild just yet. | einsetzen, bereitstellen |
+| to distinguish (noun: distinction) | Your eyes can easily distinguish between red and yellow. | unterscheiden |
+| advent | The advent of 5G could make this real. | Aufkommen, Beginn |
+| dedicated (noun: dedication) | DSRC or Dedicated Short Range Communications | gewidmet, spezialisiert |
+| to mandate (noun: mandate) | China mandated the use of C-V2X. | vorschreiben, anordnen |
+| crucial | It'll be crucial to the safety levels. | entscheidend, ausschlaggebend |
+| appropriate (noun: appropriateness) | Critics of the WiFi standard say the technology is outdated and not appropriate for the cars of tomorrow. | angemessen, geeignet |
+| to prevail (noun: prevalence) | So which will prevail? | sich durchsetzen, vorherrschen |
+| to recognize (noun: recognition) | You recognize what that color change means. | erkennen |
+| to convey (noun: conveyance) | The traffic light uses light to convey information. | übermitteln, vermitteln |
+| obstruction (verb: obstruct) | Bluetooth wave can generally pass-through obstructions like walls. | Hindernis, Blockade |
+| attuned (noun: attunement) | Engineers designed the circuitry to be attuned to sensing and transmitting these wavelengths. | abgestimmt, eingestimmt |
+| to accommodate (noun: accommodation) | To accommodate so many users, the spectrum is broken up into 79 different channels, | unterbringen |
+| to equate (noun: equation) | The header can be equated to the size of the letter or the box. | gleichsetzen |
+| to determine | Which control architectures determine task distribution? | bestimmen / festlegen |
+| amenable | They may not be amenable to conventional design. | zugänglich / empfänglich |
+| utility | The most utile action is the action with the highest reward. | Nutzen / Nützlichkeit |
+| to facilitate | There are approaches to facilitate swarm behaviour. | erleichtern / fördern |
+| to pursue | The swarm pursues the most rewarding task. | verfolgen |
+| feasible | Control may be feasible through emergent coordination. | machbar / umsetzbar |
+| capability | The capabilities of individual units are known from their design. | Fähigkeit / Kompetenz |
+| to predict | Predicting the individual’s behaviour becomes incredibly difficult. | vorhersagen / prognostizieren |
+| cohesive | Humans and robots will cooperate as cohesive team. | zusammenhängend |
+
+

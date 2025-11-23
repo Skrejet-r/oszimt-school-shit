@@ -94,6 +94,7 @@
 | ---------------- | ------------------ | ------ | ------- |
 | ISR4321 Router   | Netzwerkkomponente | 1      | IT-Raum |
 | 2960-24TT Switch | Netzwerkkomponente | 2      | IT-Raum |
+|                  |                    |        |         |
 
 
 ### Gebäude/Räume
@@ -106,3 +107,4 @@
 | Werbung          | Marketing                   | PC-PT, IP Phone          |
 | Geschäftsleitung | Unternehmensführung         | PC-PT, IP Phone          |
 | Lohnbuchhaltung  | Finanzverwaltung            | PC-PT, IP Phone          |
+Mehr: [[Hacken und Recht_Hebel.pdf]]
