@@ -1,0 +1,128 @@
+[
+    {
+        "title": "LF 6",
+        "path": "LF 6",
+        "files": [
+            {
+                "title": "ITIL Klausur - Erklärung der wichtigen Konzepte", 
+                "path": "ITIL Klausur - Erklärung der wichtigen Konzepte.md"
+            },
+            {
+                "title": "Troubleshooting Smart-Home-System", 
+                "path": "Troubleshooting Smart-Home-System.md"
+            }
+        ]
+    },
+    {
+        "title": "LF 7",
+        "path": "LF 7",
+        "files": [
+            {
+                "title": "Elektrische Grundgrößen – Berechnungen", 
+                "path": "Elektrische Grundgrößen – Berechnungen.md"
+            },
+            {
+                "title": "Glossar", 
+                "path": "_Glossar.md"
+            },
+            {
+                "title": "Inbetriebnahme eines vorhandenen cyber-physischen Systems", 
+                "path": "Inbetriebnahme eines vorhandenen cyber-physischen Systems.md"
+            },
+            {
+                "title": "IoT Architektur & OSI – Zusammenfassung", 
+                "path": "IoT Architektur & OSI – Zusammenfassung.md"
+            },
+            {
+                "title": "Smart Home", 
+                "path": "Smart Home.md"
+            },
+            {
+                "title": "Smart-Home Stromversorgung", 
+                "path": "Smart-Home Stromversorgung.md"
+            }
+        ]
+    },
+    {
+        "title": "LF 8",
+        "path": "LF 8",
+        "files": [
+            {
+                "title": "ABC-Analyse im Marketing", 
+                "path": "ABC-Analyse im Marketing.md"
+            },
+            {
+                "title": "Datenbanksysteme", 
+                "path": "Datenbanksysteme.md"
+            },
+            {
+                "title": "ERM -> RM", 
+                "path": "ERM -> RM.md"
+            },
+            {
+                "title": "Marketing-Mix & Marketinginstrumente", 
+                "path": "Marketing-Mix & Marketinginstrumente.md"
+            },
+            {
+                "title": "Normalenformen", 
+                "path": "Normalenformen.md"
+            },
+            {
+                "title": "SWOT-Analyse", 
+                "path": "SWOT-Analyse.md"
+            }
+        ]
+    },
+    {
+        "title": "LF 9",
+        "path": "LF 9",
+        "files": [
+            {
+                "title": "Befehlsliste", 
+                "path": "_Befehlliste.md"
+            },
+            {
+                "title": "Erweiterte Erklärung – VLANs, Router-on-a-Stick, ARP, OSI, Trunking", 
+                "path": "Erweiterte Erklärung – VLANs, Router-on-a-Stick, ARP, OSI, Trunking.md"
+            },
+            {
+                "title": "Geräte und Kabel", 
+                "path": "Geräte und Kabels.md"
+            },
+            {
+                "title": "Grundlagen - Switch, Router, VLAN, Trunk, Router-on-a-Stick", 
+                "path": "Grundlagen - Switch, Router, VLAN, Trunk, Router-on-a-Stick.md"
+            },
+            {
+                "title": "Netzwerkaufgaben - Erklärung und Befehle", 
+                "path": "Netzwerkaufgaben - Erklärung und Befehle.md"
+            },
+            {
+                "title": "Netzwerk-Lab Erklärungen (für totale Anfänger)", 
+                "path": "Netzwerk-Lab Erklärungen (für totale Anfänger).md"
+            },
+            {
+                "title": "Routing Konzepte", 
+                "path": "Rouitng Konzepte.md"
+            },
+            {
+                "title": "Subnetting – Grundlagen, Beispiele & Aufgabenlösung", 
+                "path": "Subnetting – Grundlagen, Beispiele & Aufgabenlösung.md"
+            },
+            {
+                "title": "VLAN + Trunk + Router-on-a-Stick – Vollständige Erklärung", 
+                "path": "VLAN + Trunk + Router-on-a-Stick – Vollständige Erklärung.md"
+            }
+        ]
+    },
+    {
+        "title": "WSK",
+        "path": "WSK",
+        "files": [
+            {
+                "title": "Privatinsolvenz – Kompakte Übersicht", 
+                "path": "Privatinsolvenz – Kompakte Übersicht.md"
+            }
+        ]
+    }
+]
