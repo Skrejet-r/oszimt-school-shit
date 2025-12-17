@@ -1,3 +1,11 @@
+
+# Prüfungen 
+
+[[Prüfung Beispiel 1]]
+
+# Cards 
+
+### Planen, Vorbereiten und Durchführen von Arbeitsaufgaben
 [[1 ●]]
 [[2 ●●]]
 [[3 ●]]
@@ -10,11 +18,6 @@
 [[10 ●●]]
 [[11 ●●]]
 [[12 ●●]]
-
-
-
-
-
 
 
 
