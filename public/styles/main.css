@@ -5,6 +5,8 @@
 
 * {
 	font-family: 'Montserrat';
+    scrollbar-width: thin;
+    scrollbar-color: #333;
 }
 html {
 scroll-behavior: smooth;
@@ -16,20 +18,23 @@ body {
 /* -- Neuer Header Style -- */
 header {
     /* 1. Visuelle Verbesserung & Barrierefreiheit */
-    background-color: #333; /* Dunkler Hintergrund */
+     /* Dunkler Hintergrund  background-color: #333;*/
+     background-color: #9B120F;
+     border-radius: 0px;
     color: #ffffff;         /* Heller Text für hohen Kontrast (WCAG AA/AAA) */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Leichter Schatten für "Schwebe-Effekt" */
+     /* Leichter Schatten für "Schwebe-Effekt" box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
 
     /* 2. Layout und Positionierung */
     padding: 15px 30px; /* Mehr vertikaler und horizontaler Raum */
     
     position: sticky; /* Beibehalten: Klebt oben beim Scrollen */
-    top: 0;
+    top: 0px;
+    left: 0px;
     z-index: 1000; /* Wichtig: Stellt sicher, dass der Header über dem Hauptinhalt liegt */
     
     display: flex;
     flex-direction: row;
-    justify-content: space-between; /* H1 links, Navigation rechts */
+    justify-content: space-around; /* H1 links, Navigation rechts */
     align-items: center; /* Vertikale Zentrierung von Text und Navigationslinks */
 }
 
@@ -44,7 +49,6 @@ header h1 {
 header nav ul {
     list-style: none; /* Entfernt die Aufzählungszeichen */
     margin: 0;
-    padding: 0;
     display: flex; /* Links nebeneinander anordnen */
     gap: 20px; /* Abstand zwischen den Navigationspunkten */
 }
@@ -111,14 +115,36 @@ main {
 }
 
 .sidebar {
+    z-index: 999;
+    position:fixed;
+    top: 80px; /* Abstand vom oberen Rand beim Scrollen */
+    left: 0;
     width: 250px;
+    height: calc(100vh - 80px); /* Volle Höhe minus Header-Höhe */
+    overflow-y: auto; /* Ermöglicht vertikales Scrollen, wenn der Inhalt
     flex-shrink: 0; /* Verhindert, dass die Sidebar schrumpft */
     padding-right: 15px;
+    background-color: white;
     border-right: 1px solid #ddd;
+    border-radius: 25px 25px 0px 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .content-area {
+    overflow: scroll;
+    position: fixed;
+    max-width: calc(100vw - 300px - 25px);
+    left: 300px;
+    top: 80px;
+    padding: 25px;
     flex-grow: 1; /* Lässt den Inhaltsbereich den verbleibenden Platz einnehmen */
+    height: calc(100vh - 80px - 25px);
+}
+#md-content {
+    max-width: 100%; /* Maximale Breite für bessere Lesbarkeit */
+    max-height: 100%;
+    margin: auto; /* Zentriert den Inhalt horizontal */
+    overflow: auto;
 }
 
 /* TOC STYLES */
