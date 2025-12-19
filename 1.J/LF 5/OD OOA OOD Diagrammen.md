@@ -12,3 +12,9 @@ OOA und OOD
 
 OD
 ![[OD.png]]
+
+
+
+---
+
+![[Diagram 2025-04-03 12-22-36.png]]

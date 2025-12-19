@@ -7,3 +7,7 @@ Die Aufgaben unterscheiden sich auch nach schwierigkeit:
 ● - leicht
 ●● - mittel
 ●●● - schwer 
+
+Alle Dateien: 
+[[_all]]
+

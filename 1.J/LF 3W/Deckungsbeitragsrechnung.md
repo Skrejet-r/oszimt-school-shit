@@ -72,3 +72,5 @@ Das Dokument enthält auch eine graphische Darstellung der Kosten und Erlöse.
 ##   Fazit
 
 Die Deckungsbeitragsrechnung hilft zu verstehen, wie sich Preisänderungen auf Kosten und Gewinn auswirken. Sie ist entscheidend für die Bestimmung des Break-Even-Points und die Entscheidungsfindung im Unternehmen.
+
+![[Deckungbeitrag.pdf]]
