@@ -154,6 +154,128 @@ main {
 }
 
 /* ======================================= */
+/* 5. CONTENT STYLES (Markdown-Inhalte) */
+/* ======================================= */
+
+#md-content {
+    line-height: 1.6;
+    color: #333;
+}
+
+#md-content h1 {
+    font-size: 2em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.3em;
+}
+
+#md-content h2 {
+    font-size: 1.75em;
+    margin-top: 1.3em;
+    margin-bottom: 0.5em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.3em;
+}
+
+#md-content h3 {
+    font-size: 1.5em;
+    margin-top: 1.2em;
+    margin-bottom: 0.4em;
+}
+
+#md-content p {
+    margin: 1em 0;
+}
+
+#md-content ul, #md-content ol {
+    margin: 1em 0;
+    padding-left: 2em;
+}
+
+#md-content li {
+    margin: 0.5em 0;
+}
+
+#md-content code {
+    background-color: #f4f4f4;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+}
+
+#md-content pre {
+    background-color: #f4f4f4;
+    padding: 1em;
+    border-radius: 5px;
+    overflow-x: auto;
+    border-left: 4px solid #4CAF50;
+}
+
+#md-content pre code {
+    background-color: transparent;
+    padding: 0;
+}
+
+#md-content a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+#md-content a:hover {
+    text-decoration: underline;
+}
+
+/* Bild-Styling */
+#md-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.5em auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#md-content img[alt] {
+    /* Zeige Alt-Text als Caption wenn Bild nicht geladen werden kann */
+    font-style: italic;
+    color: #666;
+}
+
+/* Tabellen-Styling */
+#md-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0;
+}
+
+#md-content table th,
+#md-content table td {
+    border: 1px solid #ddd;
+    padding: 0.75em;
+    text-align: left;
+}
+
+#md-content table th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
+
+#md-content table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Blockquotes */
+#md-content blockquote {
+    border-left: 4px solid #4CAF50;
+    margin: 1.5em 0;
+    padding: 0.5em 1em;
+    background-color: #f9f9f9;
+    font-style: italic;
+}
+
+/* ======================================= */
 /* 6. MOBILE RESPONSIBILITY (MEDIA QUERIES) */
 /* ======================================= */
 
@@ -211,6 +333,19 @@ main {
     /* CONTENT BEREICH ANPASSUNGEN */
     .content-area {
         padding: 0 10px; /* Stellt das korrekte Padding für den Inhalt her */
+    }
+    
+    /* Bilder auf mobilen Geräten */
+    #md-content img {
+        margin: 1em auto;
+    }
+    
+    /* Tabellen auf mobilen Geräten */
+    #md-content table {
+        font-size: 0.9em;
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
     }
     
     /* FOOTER ANPASSUNGEN (Optional) */
