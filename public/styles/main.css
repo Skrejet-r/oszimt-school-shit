@@ -134,7 +134,7 @@ main {
 }
 
 #folder-select {
-    margin: 0 20px 15px 20px;
+    margin: 15px 20px 15px 20px;
     padding: 10px 15px;
     border: 1px solid var(--border-color);
     border-radius: 8px;
@@ -143,6 +143,7 @@ main {
     color: var(--text-primary);
     transition: all 0.2s ease;
     cursor: pointer;
+    width: calc(100% - 40px) !important;
 }
 
 #folder-select:hover {
