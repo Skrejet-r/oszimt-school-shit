@@ -4,225 +4,548 @@
 /* GENERAL STYLE */
 
 * {
-	font-family: 'Montserrat';
-}
-html {
-scroll-behavior: smooth;
-}
-body {
-	margin: 0;
-}
-
-/* -- Neuer Header Style -- */
-header {
-    /* 1. Visuelle Verbesserung & Barrierefreiheit */
-    background-color: #333; /* Dunkler Hintergrund */
-    color: #ffffff;         /* Heller Text für hohen Kontrast (WCAG AA/AAA) */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Leichter Schatten für "Schwebe-Effekt" */
-
-    /* 2. Layout und Positionierung */
-    padding: 15px 30px; /* Mehr vertikaler und horizontaler Raum */
-    
-    position: sticky; /* Beibehalten: Klebt oben beim Scrollen */
-    top: 0;
-    z-index: 1000; /* Wichtig: Stellt sicher, dass der Header über dem Hauptinhalt liegt */
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; /* H1 links, Navigation rechts */
-    align-items: center; /* Vertikale Zentrierung von Text und Navigationslinks */
-}
-
-/* 3. Styling für den Haupttitel (H1) */
-header h1 {
-    font-size: 1.5em; /* Gute Größe */
-    margin: 0; /* Entfernt Standard-Margins des H1-Tags */
-    line-height: 1;
-}
-
-/* 4. Styling der Navigation (NAV) */
-header nav ul {
-    list-style: none; /* Entfernt die Aufzählungszeichen */
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    display: flex; /* Links nebeneinander anordnen */
-    gap: 20px; /* Abstand zwischen den Navigationspunkten */
+}
+*::selection {
+    background-color: #9B120F;
+    color: #ffffff;
 }
 
-/* 5. Styling der Navigationslinks (A) */
-header nav ul li a {
-    color: #ffffff; /* Weißer Text, da Hintergrund dunkel ist */
-    text-decoration: none; /* Entfernt Unterstrich */
-    font-weight: 500;
-    transition: color 0.3s ease; /* Weicher Übergang für Hover-Effekt */
+:root {
+    --primary-color: #9B120F;
+    --primary-hover: #7a0e0c;
+    --bg-light: #f7f7f8;
+    --bg-white: #ffffff;
+    --text-primary: #2e2e2e;
+    --text-secondary: #6e6e80;
+    --border-color: #e5e5e5;
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --header-height: 60px;
+    --footer-height: 50px;
+    --sidebar-width: 280px;
 }
 
-header nav ul li a:hover,
-header nav ul li a:focus {
-    color: #4CAF50; /* Beispiel: Grüne Farbe beim Hover/Fokus (gute Kontrastfarbe) */
-    text-decoration: underline;
-    outline: none; /* Entfernt Fokus-Outline, wird aber durch Unterstrich ersetzt */
+html {
+    scroll-behavior: smooth;
 }
 
-/* -- Neuer Footer Style -- */
-footer {
-    /* 1. Positionierung: Am Ende des Body-Flows, NICHT absolut */
-    /* Absolute Positionierung entfernt, um bei langem Inhalt überlappende Fehler zu vermeiden */
-    margin-top: 40px; /* Zusätzlicher Abstand zum Hauptinhalt */
-    padding: 20px 20px; /* Etwas mehr vertikaler und horizontaler Raum */
+body {
+    margin: 0;
+    background-color: var(--bg-light);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow: hidden;
+}
+
+/* ===================================== */
+/* HEADER - Fixed at Top */
+/* ===================================== */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--header-height);
+    z-index: 1000;
     
-    /* 2. Hintergrund und Trennlinie */
-    background-color: #f8f8f8; /* Leichter grauer Hintergrund für Abgrenzung */
-    color: #333; /* Dunkle Schrift */
-    border-top: 1px solid #ccc; /* Weichere Trennlinie */
-
-    /* 3. Layout und Zentrierung */
+    background-color: var(--primary-color);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-md);
+    
     display: flex;
-    flex-direction: column; 
+    justify-content: space-between;
     align-items: center;
-    text-align: center; /* Text innerhalb des Fußes zentrieren */
-
-    /* 4. Schrift und Links */
-    font-size: 0.9em; /* Etwas kleiner für die Fußzeile */
+    padding: 0 30px;
 }
 
-/* Optional: Styling für Links im Footer */
-footer a {
-    color: #0056b3; /* Dunkelblau, kontrastreich */
+header h1 {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: var(--bg-white);
+    letter-spacing: -0.5px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+header nav ul li a {
+    color: rgba(255, 255, 255, 0.9);
     text-decoration: none;
-    padding: 0 5px; /* Abstand zwischen den Links */
+    font-weight: 500;
+    font-size: 0.95em;
+    transition: all 0.2s ease;
+    padding: 8px 12px;
+    border-radius: 6px;
 }
 
-footer a:hover {
-    text-decoration: underline;
+header nav ul li a:hover {
+    color: var(--bg-white);
+    background-color: rgba(255, 255, 255, 0.15);
 }
 
-/* Optional: Styling für die Paragraphen im Footer (falls mehrere da sind) */
-footer p {
-    margin: 5px 0; /* Weniger Abstand zwischen den Zeilen */
-}
+/* ===================================== */
+/* MAIN LAYOUT - ChatGPT Style */
+/* ===================================== */
 
-/* LAYOUT: Main Content und Sidebar */
 main {
-    display: flex; /* Aktiviert Flexbox */
-    gap: 20px;     /* Abstand zwischen Sidebar und Content */
-    padding: 20px;
-    min-height: 80vh; /* Mindesthöhe für Layout-Test */
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    bottom: var(--footer-height);
+    display: flex;
+    overflow: hidden;
 }
+
+/* ===================================== */
+/* SIDEBAR - Fixed Left Panel */
+/* ===================================== */
 
 .sidebar {
-    width: 250px;
-    flex-shrink: 0; /* Verhindert, dass die Sidebar schrumpft */
-    padding-right: 15px;
-    border-right: 1px solid #ddd;
+    position: fixed;
+    left: 0;
+    top: var(--header-height);
+    bottom: var(--footer-height);
+    width: var(--sidebar-width);
+    
+    background-color: var(--bg-white);
+    border-right: 1px solid var(--border-color);
+    
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
-.content-area {
-    flex-grow: 1; /* Lässt den Inhaltsbereich den verbleibenden Platz einnehmen */
+.sidebar h2 {
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 20px 20px 15px 20px;
+    color: var(--text-primary);
+    border-bottom: 1px solid var(--border-color);
 }
 
-/* TOC STYLES */
+#folder-select {
+    margin: 0 20px 15px 20px;
+    padding: 10px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 0.95em;
+    background-color: var(--bg-white);
+    color: var(--text-primary);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+#folder-select:hover {
+    border-color: var(--primary-color);
+}
+
+#folder-select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(155, 18, 15, 0.1);
+}
+
+#search-input {
+    margin: 0 20px 15px 20px;
+    padding: 10px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 0.95em;
+    background-color: var(--bg-light);
+    transition: all 0.2s ease;
+}
+
+#search-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    background-color: var(--bg-white);
+    box-shadow: 0 0 0 3px rgba(155, 18, 15, 0.1);
+}
+
 #toc-list {
-    list-style: none; /* Entfernt die Standard-Aufzählungszeichen */
-    padding-left: 0;
+    list-style: none;
+    padding: 0 15px 20px 15px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+#toc-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+#toc-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#toc-list::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 3px;
+}
+
+#toc-list::-webkit-scrollbar-thumb:hover {
+    background: #ccc;
 }
 
 #toc-list ul {
     list-style: none;
-    padding-left: 20px; /* Einrückung für Unterpunkte */
-    margin-bottom: 10px;
-}
-
-#toc-list li {
+    padding-left: 15px;
     margin: 5px 0;
 }
 
+#toc-list li {
+    margin: 3px 0;
+}
+
 #toc-list a {
+    display: block;
     text-decoration: none;
-    color: #0056b3;
+    color: var(--text-secondary);
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.9em;
+    transition: all 0.15s ease;
 }
 
 #toc-list a:hover {
-    text-decoration: underline;
+    background-color: var(--bg-light);
+    color: var(--text-primary);
+}
+
+#toc-list a.active {
+    background-color: rgba(155, 18, 15, 0.1);
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.category-item {
+    margin-bottom: 8px;
+}
+
+.category-header {
+    margin-top: 12px;
 }
 
 .category-title {
-    font-weight: bold;
-    display: block;
-    margin-top: 10px;
-    color: #333;
+    font-weight: 600;
+    font-size: 0.85em;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.2s ease;
 }
 
-/* ======================================= */
-/* 6. MOBILE RESPONSIBILITY (MEDIA QUERIES) */
-/* ======================================= */
+.category-header:hover .category-title {
+    color: var(--primary-color);
+}
 
-/* Media Query für Bildschirme kleiner oder gleich 768px (Typische Tablet-Grenze) */
-@media (max-width: 768px) {
+.category-icon {
+    color: var(--text-secondary);
+    transition: transform 0.2s ease, opacity 0.2s ease, color 0.2s ease;
+    display: inline-block;
+}
+
+.category-header:hover .category-icon {
+    color: var(--primary-color);
+}
+
+.category-files {
+    transition: max-height 0.3s ease, opacity 0.2s ease;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+/* ===================================== */
+/* CONTENT AREA - Main Content Panel */
+/* ===================================== */
+
+.content-area {
+    position: fixed;
+    left: var(--sidebar-width);
+    top: var(--header-height);
+    right: 0;
+    bottom: var(--footer-height);
     
-    /* HEADER ANPASSUNGEN */
-    header {
-        /* Reduziert das Padding auf kleinen Geräten */
-        padding: 10px 20px;
-        /* Bei sehr kleinen Geräten (z.B. iPhone SE) wird die Navigation unter den Titel gesetzt */
-        flex-direction: column; 
-        align-items: flex-start; /* Stellt den Titel linksbündig */
+    background-color: var(--bg-white);
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.content-area::-webkit-scrollbar {
+    width: 8px;
+}
+
+.content-area::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.content-area::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 4px;
+}
+
+.content-area::-webkit-scrollbar-thumb:hover {
+    background: #ccc;
+}
+
+#md-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 60px;
+}
+
+#md-content p {
+    margin: 16px 0;
+    line-height: 1.7;
+    color: var(--text-primary);
+}
+
+#md-content h1,
+#md-content h2,
+#md-content h3 {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--text-primary);
+}
+
+#md-content h1 {
+    font-size: 2em;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+#md-content h2 {
+    font-size: 1.6em;
+}
+
+#md-content h3 {
+    font-size: 1.3em;
+}
+
+#md-content code {
+    background-color: var(--bg-light);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-family: 'Consolas', 'Monaco', monospace;
+}
+
+#md-content pre {
+    background-color: var(--bg-light);
+    padding: 16px;
+    border-radius: 8px;
+    overflow-x: auto;
+    border: 1px solid var(--border-color);
+}
+
+#md-content pre code {
+    background: none;
+    padding: 0;
+}
+
+#md-content a {
+    color: var(--primary-color);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+#md-content a:hover {
+    border-bottom-color: var(--primary-color);
+}
+
+#md-content ul,
+#md-content ol {
+    margin: 16px 0;
+    padding-left: 30px;
+}
+
+#md-content li {
+    margin: 8px 0;
+}
+
+#md-content blockquote {
+    border-left: 3px solid var(--primary-color);
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: var(--bg-light);
+    color: var(--text-secondary);
+}
+
+/* ===================================== */
+/* FOOTER - Fixed at Bottom */
+/* ===================================== */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: var(--footer-height);
+    z-index: 999;
+    
+    background-color: var(--bg-white);
+    border-top: 1px solid var(--border-color);
+    box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.05);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+}
+
+footer p {
+    font-size: 0.85em;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+footer a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin: 0 8px;
+    transition: color 0.2s ease;
+    font-weight: 500;
+}
+
+footer a:hover {
+    color: var(--primary-hover);
+    text-decoration: underline;
+}
+
+/* ===================================== */
+/* RESPONSIVE DESIGN */
+/* ===================================== */
+
+@media (max-width: 1024px) {
+    :root {
+        --sidebar-width: 250px;
     }
     
-    header nav {
-        width: 100%;
-        margin-top: 10px;
+    #md-content {
+        padding: 30px 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --header-height: auto;
+        --footer-height: auto;
+        --sidebar-width: 100%;
+    }
+    
+    body {
+        overflow: auto;
+    }
+    
+    header {
+        position: relative;
+        height: auto;
+        flex-direction: column;
+        padding: 15px 20px;
+        gap: 10px;
+    }
+    
+    header h1 {
+        font-size: 1.2em;
     }
     
     header nav ul {
-        /* Navigationslinks sollen die gesamte Breite nutzen, falls nötig */
-        flex-direction: column; 
-        gap: 5px;
-    }
-    
-    /* MAIN LAYOUT ANPASSUNGEN */
-    main {
-        /* Ändert die Hauptrichtung von Reihe zu Spalte */
         flex-direction: column;
-        padding: 10px; /* Reduziert das Padding auf Mobilgeräten */
-        gap: 40px; /* Größerer vertikaler Abstand zwischen den Abschnitten */
+        gap: 8px;
+        width: 100%;
     }
-
-    /* SIDEBAR ANPASSUNGEN (Inhaltsverzeichnis) */
-    .sidebar {
-        width: auto; /* Nimmt die volle Breite ein */
-        padding: 0 10px; /* Horizontales Padding beibehalten */
-        
-        /* Entfernt die vertikale Trennlinie und ersetzt sie durch eine horizontale Linie */
+    
+    header nav ul li {
+        width: 100%;
+    }
+    
+    header nav ul li a {
+        display: block;
+        text-align: center;
+    }
+    
+    main {
+        position: relative;
+        top: 0;
+        bottom: 0;
+        flex-direction: column;
+        overflow: visible;
+    }
+    
+        .sidebar {
+        position: relative;
+        top: 0;
+        left: 0;
+        bottom: auto;
+        margin: 0;
+        padding: 0;
+        width: 100vw !important;
+        max-width: 100vw;
         border-right: none;
-        border-bottom: 1px solid #ddd;
-        padding-bottom: 20px;
+        border-bottom: 1px solid var(--border-color);
+        max-height: 400px;
+        box-sizing: border-box;
+    }
+
+    .sidebar select {
+        margin-top: 15px !important;
+        width: calc(100% - 40px) !important;
     }
     
-    #search-input {
-    width: calc(100% - 22px); /* Volle Breite mit etwas Padding */
-    padding: 10px;
-    margin-bottom: 20px; /* Abstand zur Liste */
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1em;
-}
-    
-    /* CONTENT BEREICH ANPASSUNGEN */
     .content-area {
-        padding: 0 10px; /* Stellt das korrekte Padding für den Inhalt her */
+        position: relative;
+        left: 0;
+        top: 0;
+        bottom: auto;
+        min-height: calc(100vh - 400px);
     }
     
-    /* FOOTER ANPASSUNGEN (Optional) */
+    #md-content {
+        padding: 25px 20px;
+    }
+    
     footer {
-        padding: 15px 10px;
-        font-size: 0.85em;
+        position: relative;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    footer p {
+        font-size: 0.8em;
     }
 }
 
-/* Optional: Weitere Anpassungen für extrem kleine Bildschirme (<480px) */
 @media (max-width: 480px) {
     header h1 {
+        font-size: 1.1em;
+    }
+    
+    #md-content {
+        padding: 20px 15px;
+    }
+    
+    #md-content h1 {
+        font-size: 1.6em;
+    }
+    
+    #md-content h2 {
         font-size: 1.3em;
+    }
+    
+    footer {
+        padding: 15px;
     }
 }

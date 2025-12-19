@@ -1,52 +1,57 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OSZIMT School Shit - Inhaltsübersicht</title>
     <link rel="stylesheet" href="styles/main.css">
-    
+
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="config.js"></script>
 </head>
+
 <body>
     <header>
         <h1>oszimt-school-shit</h1>
         <nav aria-label="Hauptnavigation">
             <ul>
-                <li><a href="#inhalt">Zum Hauptinhalt springen (Skiplink)</a></li> 
+                <li><a href="#inhalt">Zum Hauptinhalt springen (Skiplink)</a></li>
                 <li><a href="index.html">Startseite</a></li>
             </ul>
         </nav>
     </header>
 
-    <a href="#inhalt" class="skip-link">Zum Hauptinhalt springen</a>
 
     <main id="inhalt">
         <section class="sidebar">
-    <h2>Inhaltsverzeichnis</h2>
-    
-    <input 
-        type="text" 
-        id="search-input" 
-        placeholder="Thema suchen..." 
-        aria-label="Filter für das Inhaltsverzeichnis">
-        
-    <ul id="toc-list">
-        </ul>
-</section>
+            <h2>Inhaltsverzeichnis</h2>
+            
+            <select id="folder-select" aria-label="Ordner auswählen" style="width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #e5e5e5; border-radius: 6px; font-size: 0.9em;">
+                <option value="">Alle Ordner</option>
+            </select>
+
+            <input type="text" id="search-input" placeholder="Thema suchen..."
+                aria-label="Filter für das Inhaltsverzeichnis">
+
+            <ul id="toc-list">
+            </ul>
+        </section>
 
         <section class="content-area">
             <div id="md-content">
-                <p>Bitte wählen Sie links ein Thema aus, um den Inhalt anzuzeigen.</p>
+                <p id="default-content-text">Bitte wählen Sie links ein Thema aus, um den Inhalt anzuzeigen.</p>
             </div>
         </section>
-        
+
     </main>
 
     <footer>
-        <p>&copy; 2025 Ihr Name/Unternehmen. <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a></p>
+        <p>&copy; 2025 Ihr Name/Unternehmen. <a href="impressum.html">Impressum</a> | <a
+                href="datenschutz.html">Datenschutz</a></p>
     </footer>
 
     <script src="script.js" defer></script>
 </body>
+
 </html>

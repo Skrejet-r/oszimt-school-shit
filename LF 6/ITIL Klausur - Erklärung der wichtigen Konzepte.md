@@ -1,3 +1,4 @@
+#lf6klausur12
 ## 1. **Single Point of Failure (SPOF)**
 
 > Ein **Single Point of Failure** (SPOF) bezeichnet eine Stelle im IT-System, deren Ausfall das gesamte System oder einen wesentlichen Teil des Systems zum Stillstand bringen würde. In einem gut strukturierten System sollte es keine SPOFs geben, um die Verfügbarkeit des Systems sicherzustellen.
