@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles/main.css">
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="config.js"></script>
 </head>
 
 <body>
@@ -25,6 +26,10 @@
     <main id="inhalt">
         <section class="sidebar">
             <h2>Inhaltsverzeichnis</h2>
+            
+            <select id="folder-select" aria-label="Ordner auswählen" style="width: 100%; padding: 8px; margin-bottom: 15px; border: 1px solid #e5e5e5; border-radius: 6px; font-size: 0.9em;">
+                <option value="">Alle Ordner</option>
+            </select>
 
             <input type="text" id="search-input" placeholder="Thema suchen..."
                 aria-label="Filter für das Inhaltsverzeichnis">
@@ -35,7 +40,7 @@
 
         <section class="content-area">
             <div id="md-content">
-                <p>Bitte wählen Sie links ein Thema aus, um den Inhalt anzuzeigen.</p>
+                <p id="default-content-text">Bitte wählen Sie links ein Thema aus, um den Inhalt anzuzeigen.</p>
             </div>
         </section>
 

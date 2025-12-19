@@ -133,8 +133,30 @@ main {
     border-bottom: 1px solid var(--border-color);
 }
 
+#folder-select {
+    margin: 0 20px 15px 20px;
+    padding: 10px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 0.95em;
+    background-color: var(--bg-white);
+    color: var(--text-primary);
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+#folder-select:hover {
+    border-color: var(--primary-color);
+}
+
+#folder-select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(155, 18, 15, 0.1);
+}
+
 #search-input {
-    margin: 15px 20px;
+    margin: 0 20px 15px 20px;
     padding: 10px 15px;
     border: 1px solid var(--border-color);
     border-radius: 8px;
@@ -205,14 +227,41 @@ main {
     font-weight: 500;
 }
 
+.category-item {
+    margin-bottom: 8px;
+}
+
+.category-header {
+    margin-top: 12px;
+}
+
 .category-title {
     font-weight: 600;
     font-size: 0.85em;
     color: var(--text-primary);
-    padding: 12px 12px 6px 12px;
-    margin-top: 15px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    transition: color 0.2s ease;
+}
+
+.category-header:hover .category-title {
+    color: var(--primary-color);
+}
+
+.category-icon {
+    color: var(--text-secondary);
+    transition: transform 0.2s ease, opacity 0.2s ease, color 0.2s ease;
+    display: inline-block;
+}
+
+.category-header:hover .category-icon {
+    color: var(--primary-color);
+}
+
+.category-files {
+    transition: max-height 0.3s ease, opacity 0.2s ease;
+    overflow: hidden;
+    margin-top: 5px;
 }
 
 /* ===================================== */
