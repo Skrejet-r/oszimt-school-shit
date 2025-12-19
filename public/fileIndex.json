@@ -1,487 +1,15 @@
 [
     {
-        "title": "1.J / LF 1",
-        "path": "1.J/LF 1",
-        "files": [
-            {
-                "title": "Analyse-Synthese-Konzept",
-                "path": "1.J/LF 1/Analyse-Synthese-Konzept.md"
-            },
-            {
-                "title": "Marktformen und Wettbewerb",
-                "path": "1.J/LF 1/Marktformen und Wettbewerb.md"
-            },
-            {
-                "title": "SCRUM",
-                "path": "1.J/LF 1/SCRUM.md"
-            },
-            {
-                "title": "Vollmachten in Unternehmen",
-                "path": "1.J/LF 1/Vollmachten in Unternehmen.md"
-            },
-            {
-                "title": "Wettbewerbsschutz in Digitalmärkten",
-                "path": "1.J/LF 1/Wettbewerbsschutz in Digitalmärkten.md"
-            }
-        ]
-    },
-    {
-        "title": "1.J / LF 2",
-        "path": "1.J/LF 2",
-        "files": [
-            {
-                "title": "Allgemeine Kalkulation",
-                "path": "1.J/LF 2/Allgemeine Kalkulation.md"
-            },
-            {
-                "title": "Anforderungen an einen Arbeitsplatz",
-                "path": "1.J/LF 2/Anforderungen an einen Arbeitsplatz.md"
-            },
-            {
-                "title": "Betriebssystem – Grundlagen",
-                "path": "1.J/LF 2/Betriebssystem – Grundlagen.md"
-            },
-            {
-                "title": "Drucktechnologien",
-                "path": "1.J/LF 2/Drucktechnologien.md"
-            },
-            {
-                "title": "Linux",
-                "path": "1.J/LF 2/Linux.md"
-            },
-            {
-                "title": "Lizenzen",
-                "path": "1.J/LF 2/Lizenzen.md"
-            },
-            {
-                "title": "Monitoren",
-                "path": "1.J/LF 2/Monitoren.md"
-            },
-            {
-                "title": "Netzteil",
-                "path": "1.J/LF 2/Netzteil.md"
-            },
-            {
-                "title": "Peripheriegeräte",
-                "path": "1.J/LF 2/Peripheriegeräte.md"
-            },
-            {
-                "title": "Qualitativer und Quantitativer Angebotsvergleich",
-                "path": "1.J/LF 2/Qualitativer und Quantitativer Angebotsvergleich.md"
-            },
-            {
-                "title": "VDR Kalkulationen",
-                "path": "1.J/LF 2/VDR Kalkulationen.md"
-            },
-            {
-                "title": "Virtualisierung",
-                "path": "1.J/LF 2/Virtualisierung.md"
-            },
-            {
-                "title": "Willenserklärung",
-                "path": "1.J/LF 2/Willenserklärung.md"
-            },
-            {
-                "title": "Windows Bootvorgang",
-                "path": "1.J/LF 2/Windows Bootvorgang.md"
-            }
-        ]
-    },
-    {
-        "title": "1.J / LF 3",
-        "path": "1.J/LF 3",
-        "files": [
-            {
-                "title": "DHCP und WLAN Zusammenfassung",
-                "path": "1.J/LF 3/DHCP und WLAN Zusammenfassung.md"
-            },
-            {
-                "title": "DHCPv4 (Dynamic Host Configuration Protocol)",
-                "path": "1.J/LF 3/DHCPv4 (Dynamic Host Configuration Protocol).md"
-            },
-            {
-                "title": "IP-Adressen und Subnetze",
-                "path": "1.J/LF 3/IP-Adressen und Subnetze.md"
-            },
-            {
-                "title": "IPv4-Adresse",
-                "path": "1.J/LF 3/IPv4-Adresse.md"
-            },
-            {
-                "title": "IPv6-Adressen und ihre Schreibweisen",
-                "path": "1.J/LF 3/IPv6-Adressen und ihre Schreibweisen.md"
-            },
-            {
-                "title": "IT-Sicherheitsgrundlagen - Begriffe und Erklärungen",
-                "path": "1.J/LF 3/IT-Sicherheitsgrundlagen - Begriffe und Erklärungen.md"
-            },
-            {
-                "title": "MAC-Adressen und ihre Bedeutung im Netzwerk",
-                "path": "1.J/LF 3/MAC-Adressen und ihre Bedeutung im Netzwerk.md"
-            },
-            {
-                "title": "Netzwerkprotokolle",
-                "path": "1.J/LF 3/Netzwerkprotokolle.md"
-            },
-            {
-                "title": "OSI Schichtenmodell",
-                "path": "1.J/LF 3/OSI Schichtenmodell.md"
-            },
-            {
-                "title": "OSI-Modell",
-                "path": "1.J/LF 3/OSI-Modell.md"
-            },
-            {
-                "title": "Umrechnung Hexadezimal in Binär",
-                "path": "1.J/LF 3/Umrechnung Hexadezimal in Binär.md"
-            },
-            {
-                "title": "WLAN",
-                "path": "1.J/LF 3/WLAN.md"
-            },
-            {
-                "title": "WLAN-Sicherheit",
-                "path": "1.J/LF 3/WLAN-Sicherheit.md"
-            }
-        ]
-    },
-    {
-        "title": "1.J / LF 3W",
-        "path": "1.J/LF 3W",
-        "files": [
-            {
-                "title": "Arbeitspakete",
-                "path": "1.J/LF 3W/Arbeitspakete.md"
-            },
-            {
-                "title": "Deckungsbeitragsrechnung",
-                "path": "1.J/LF 3W/Deckungsbeitragsrechnung.md"
-            },
-            {
-                "title": "Gantt-Diagramm",
-                "path": "1.J/LF 3W/Gantt-Diagramm.md"
-            },
-            {
-                "title": "Handlungskostenkalkulation",
-                "path": "1.J/LF 3W/Handlungskostenkalkulation.md"
-            },
-            {
-                "title": "Netzplantechnik – Umfassende Erklärung mit Beispielen",
-                "path": "1.J/LF 3W/Netzplantechnik – Umfassende Erklärung mit Beispielen.md"
-            },
-            {
-                "title": "Projektablaufplan und Terminplan",
-                "path": "1.J/LF 3W/Projektablaufplan und Terminplan.md"
-            },
-            {
-                "title": "Projektstrukturplan",
-                "path": "1.J/LF 3W/Projektstrukturplan.md"
-            }
-        ]
-    },
-    {
-        "title": "1.J / LF 4",
-        "path": "1.J/LF 4",
-        "files": [
-            {
-                "title": "Bedrohungen, Gefährdungen und Schadensszenarien",
-                "path": "1.J/LF 4/Bedrohungen, Gefährdungen und Schadensszenarien.md"
-            },
-            {
-                "title": "Deepfakes",
-                "path": "1.J/LF 4/Deepfakes.md"
-            },
-            {
-                "title": "Die Grundlagen der Cybersicherheit",
-                "path": "1.J/LF 4/Die Grundlagen der Cybersicherheit.md"
-            },
-            {
-                "title": "Phishing",
-                "path": "1.J/LF 4/Phishing.md"
-            },
-            {
-                "title": "Risikoanalysen und Sicherheitsmaßnahmen",
-                "path": "1.J/LF 4/Risikoanalysen und Sicherheitsmaßnahmen.md"
-            },
-            {
-                "title": "Schutzbedarf eine Unternehmens",
-                "path": "1.J/LF 4/Schutzbedarf eine Unternehmens.md"
-            },
-            {
-                "title": "Sicherheitskonzepte und Datenschutz",
-                "path": "1.J/LF 4/Sicherheitskonzepte und Datenschutz.md"
-            },
-            {
-                "title": "Spoofing",
-                "path": "1.J/LF 4/Spoofing.md"
-            }
-        ]
-    },
-    {
-        "title": "1.J / LF 5",
-        "path": "1.J/LF 5",
-        "files": [
-            {
-                "title": "Arrays",
-                "path": "1.J/LF 5/Arrays.md"
-            },
-            {
-                "title": "Assoziationen",
-                "path": "1.J/LF 5/Assoziationen.md"
-            },
-            {
-                "title": "Fahrkartenautomat",
-                "path": "1.J/LF 5/Programme/Fahrkartenautomat.md"
-            },
-            {
-                "title": "Java",
-                "path": "1.J/LF 5/Java.md"
-            },
-            {
-                "title": "Java Control Structures",
-                "path": "1.J/LF 5/Java Control Structures.md"
-            },
-            {
-                "title": "Klassen und Arrays",
-                "path": "1.J/LF 5/Klassen und Arrays.md"
-            },
-            {
-                "title": "Modelierung der Beziehung",
-                "path": "1.J/LF 5/Modelierung der Beziehung.md"
-            },
-            {
-                "title": "Modelierung in Java",
-                "path": "1.J/LF 5/Modelierung in Java.md"
-            },
-            {
-                "title": "OD OOA OOD Diagrammen",
-                "path": "1.J/LF 5/OD OOA OOD Diagrammen.md"
-            },
-            {
-                "title": "OOP",
-                "path": "1.J/LF 5/OOP.md"
-            },
-            {
-                "title": "Schleifen",
-                "path": "1.J/LF 5/Schleifen.md"
-            },
-            {
-                "title": "UML Aktivitätsdiagramm",
-                "path": "1.J/LF 5/UML Aktivitätsdiagramm.md"
-            }
-        ]
-    },
-    {
-        "title": "1.J / WSK",
-        "path": "1.J/WSK",
-        "files": [
-            {
-                "title": "Berufsbildungsgesetz (BBiG)",
-                "path": "1.J/WSK/Berufsbildungsgesetz (BBiG).md"
-            },
-            {
-                "title": "Private Zusatzversicherungen",
-                "path": "1.J/WSK/Private Zusatzversicherungen.md"
-            },
-            {
-                "title": "Rechtsgeschäfte",
-                "path": "1.J/WSK/Rechtsgeschäfte.md"
-            },
-            {
-                "title": "Sozialversicherung in Deutschland",
-                "path": "1.J/WSK/Sozialversicherung in Deutschland.md"
-            }
-        ]
-    },
-    {
-        "title": "Days",
-        "path": "Days",
-        "files": [
-            {
-                "title": "2025-09-08",
-                "path": "Days/2025-09-08.md"
-            },
-            {
-                "title": "2025-09-09",
-                "path": "Days/2025-09-09.md"
-            },
-            {
-                "title": "2025-09-10",
-                "path": "Days/2025-09-10.md"
-            },
-            {
-                "title": "2025-09-11",
-                "path": "Days/2025-09-11.md"
-            },
-            {
-                "title": "2025-09-12",
-                "path": "Days/2025-09-12.md"
-            },
-            {
-                "title": "2025-09-30",
-                "path": "Days/2025-09-30.md"
-            },
-            {
-                "title": "2025-11-04",
-                "path": "Days/2025-11-04.md"
-            },
-            {
-                "title": "2025-11-06",
-                "path": "Days/2025-11-06.md"
-            },
-            {
-                "title": "2025-11-07",
-                "path": "Days/2025-11-07.md"
-            },
-            {
-                "title": "2025-11-24",
-                "path": "Days/2025-11-24.md"
-            },
-            {
-                "title": "2025-11-25",
-                "path": "Days/2025-11-25.md"
-            },
-            {
-                "title": "2025-11-27",
-                "path": "Days/2025-11-27.md"
-            },
-            {
-                "title": "_Days",
-                "path": "Days/_Days.md"
-            }
-        ]
-    },
-    {
-        "title": "Days / 1.J",
-        "path": "Days/1.J",
-        "files": [
-            {
-                "title": "2024-11-15",
-                "path": "Days/1.J/2024-11-15.md"
-            },
-            {
-                "title": "2024-12-02",
-                "path": "Days/1.J/2024-12-02.md"
-            },
-            {
-                "title": "2024-12-03",
-                "path": "Days/1.J/2024-12-03.md"
-            },
-            {
-                "title": "2024-12-04",
-                "path": "Days/1.J/2024-12-04.md"
-            },
-            {
-                "title": "2024-12-05",
-                "path": "Days/1.J/2024-12-05.md"
-            },
-            {
-                "title": "2024-12-06",
-                "path": "Days/1.J/2024-12-06.md"
-            },
-            {
-                "title": "2025-01-03",
-                "path": "Days/1.J/2025-01-03.md"
-            },
-            {
-                "title": "2025-01-20",
-                "path": "Days/1.J/2025-01-20.md"
-            },
-            {
-                "title": "2025-01-21",
-                "path": "Days/1.J/2025-01-21.md"
-            },
-            {
-                "title": "2025-01-22",
-                "path": "Days/1.J/2025-01-22.md"
-            },
-            {
-                "title": "2025-02-17",
-                "path": "Days/1.J/2025-02-17.md"
-            },
-            {
-                "title": "2025-02-25",
-                "path": "Days/1.J/2025-02-25.md"
-            },
-            {
-                "title": "2025-03-10",
-                "path": "Days/1.J/2025-03-10.md"
-            },
-            {
-                "title": "2025-03-11",
-                "path": "Days/1.J/2025-03-11.md"
-            },
-            {
-                "title": "2025-03-12",
-                "path": "Days/1.J/2025-03-12.md"
-            },
-            {
-                "title": "2025-03-13",
-                "path": "Days/1.J/2025-03-13.md"
-            },
-            {
-                "title": "2025-03-14",
-                "path": "Days/1.J/2025-03-14.md"
-            },
-            {
-                "title": "2025-03-31",
-                "path": "Days/1.J/2025-03-31.md"
-            },
-            {
-                "title": "2025-04-01",
-                "path": "Days/1.J/2025-04-01.md"
-            },
-            {
-                "title": "2025-04-02",
-                "path": "Days/1.J/2025-04-02.md"
-            },
-            {
-                "title": "2025-04-03",
-                "path": "Days/1.J/2025-04-03.md"
-            },
-            {
-                "title": "2025-04-04",
-                "path": "Days/1.J/2025-04-04.md"
-            },
-            {
-                "title": "2025-05-05",
-                "path": "Days/1.J/2025-05-05.md"
-            }
-        ]
-    },
-    {
-        "title": "ENG",
-        "path": "ENG",
-        "files": [
-            {
-                "title": "Mocktest (Vorbereitung)",
-                "path": "ENG/Mocktest (Vorbereitung).md"
-            },
-            {
-                "title": "Test Structure Overview",
-                "path": "ENG/Test Structure Overview.md"
-            },
-            {
-                "title": "Vokabeln",
-                "path": "ENG/Vokabeln.md"
-            }
-        ]
-    },
-    {
         "title": "LF 6",
         "path": "LF 6",
         "files": [
             {
-                "title": "Die ereignisgesteuerte Prozesskette (EPK)",
-                "path": "LF 6/Die ereignisgesteuerte Prozesskette (EPK).md"
+                "title": "ITIL Klausur - Erklärung der wichtigen Konzepte", 
+                "path": "ITIL Klausur - Erklärung der wichtigen Konzepte.md"
             },
             {
-                "title": "ITIL Klausur - Erklärung der wichtigen Konzepte",
-                "path": "LF 6/ITIL Klausur - Erklärung der wichtigen Konzepte.md"
-            },
-            {
-                "title": "SLA - Service-Level-Agreement",
-                "path": "LF 6/SLA - Service-Level-Agreement.md"
+                "title": "Troubleshooting Smart-Home-System", 
+                "path": "Troubleshooting Smart-Home-System.md"
             }
         ]
     },
@@ -490,32 +18,28 @@
         "path": "LF 7",
         "files": [
             {
-                "title": "Elektrische Grundgrößen – Berechnungen",
-                "path": "LF 7/Elektrische Grundgrößen – Berechnungen.md"
+                "title": "Elektrische Grundgrößen – Berechnungen", 
+                "path": "Elektrische Grundgrößen – Berechnungen.md"
             },
             {
-                "title": "Inbetriebnahme eines vorhandenen cyber-physischen Systems",
-                "path": "LF 7/Inbetriebnahme eines vorhandenen cyber-physischen Systems.md"
+                "title": "Glossar", 
+                "path": "_Glossar.md"
             },
             {
-                "title": "IoT Architektur & OSI – Zusammenfassung",
-                "path": "LF 7/IoT Architektur & OSI – Zusammenfassung.md"
+                "title": "Inbetriebnahme eines vorhandenen cyber-physischen Systems", 
+                "path": "Inbetriebnahme eines vorhandenen cyber-physischen Systems.md"
             },
             {
-                "title": "Smart Home",
-                "path": "LF 7/Smart Home.md"
+                "title": "IoT Architektur & OSI – Zusammenfassung", 
+                "path": "IoT Architektur & OSI – Zusammenfassung.md"
             },
             {
-                "title": "Smart-Home Stromversorgung",
-                "path": "LF 7/Smart-Home Stromversorgung.md"
+                "title": "Smart Home", 
+                "path": "Smart Home.md"
             },
             {
-                "title": "Troubleshooting Smart-Home-System",
-                "path": "LF 7/Troubleshooting Smart-Home-System.md"
-            },
-            {
-                "title": "_Glossar",
-                "path": "LF 7/_Glossar.md"
+                "title": "Smart-Home Stromversorgung", 
+                "path": "Smart-Home Stromversorgung.md"
             }
         ]
     },
@@ -524,28 +48,28 @@
         "path": "LF 8",
         "files": [
             {
-                "title": "ABC-Analyse im Marketing",
-                "path": "LF 8/ABC-Analyse im Marketing.md"
+                "title": "ABC-Analyse im Marketing", 
+                "path": "ABC-Analyse im Marketing.md"
             },
             {
-                "title": "Datenbanksysteme",
-                "path": "LF 8/Datenbanksysteme.md"
+                "title": "Datenbanksysteme", 
+                "path": "Datenbanksysteme.md"
             },
             {
-                "title": "ERM -> RM",
-                "path": "LF 8/ERM -> RM.md"
+                "title": "ERM -> RM", 
+                "path": "ERM -> RM.md"
             },
             {
-                "title": "Marketing-Mix & Marketinginstrumente",
-                "path": "LF 8/Marketing-Mix & Marketinginstrumente.md"
+                "title": "Marketing-Mix & Marketinginstrumente", 
+                "path": "Marketing-Mix & Marketinginstrumente.md"
             },
             {
-                "title": "Normalenformen",
-                "path": "LF 8/Normalenformen.md"
+                "title": "Normalenformen", 
+                "path": "Normalenformen.md"
             },
             {
-                "title": "SWOT-Analyse",
-                "path": "LF 8/SWOT-Analyse.md"
+                "title": "SWOT-Analyse", 
+                "path": "SWOT-Analyse.md"
             }
         ]
     },
@@ -554,50 +78,40 @@
         "path": "LF 9",
         "files": [
             {
-                "title": "Erweiterte Erklärung – VLANs, Router-on-a-Stick, ARP, OSI, Trunking",
-                "path": "LF 9/Erweiterte Erklärung – VLANs, Router-on-a-Stick, ARP, OSI, Trunking.md"
+                "title": "Befehlsliste", 
+                "path": "_Befehlliste.md"
             },
             {
-                "title": "Geräte und Kabels",
-                "path": "LF 9/Geräte und Kabels.md"
+                "title": "Erweiterte Erklärung – VLANs, Router-on-a-Stick, ARP, OSI, Trunking", 
+                "path": "Erweiterte Erklärung – VLANs, Router-on-a-Stick, ARP, OSI, Trunking.md"
             },
             {
-                "title": "Grundlagen - Switch, Router, VLAN, Trunk, Router-on-a-Stick",
-                "path": "LF 9/Grundlagen - Switch, Router, VLAN, Trunk, Router-on-a-Stick.md"
+                "title": "Geräte und Kabel", 
+                "path": "Geräte und Kabels.md"
             },
             {
-                "title": "Netzwerk-Lab Erklärungen (für totale Anfänger)",
-                "path": "LF 9/Netzwerk-Lab Erklärungen (für totale Anfänger).md"
+                "title": "Grundlagen - Switch, Router, VLAN, Trunk, Router-on-a-Stick", 
+                "path": "Grundlagen - Switch, Router, VLAN, Trunk, Router-on-a-Stick.md"
             },
             {
-                "title": "Netzwerkaufgaben - Erklärung und Befehle",
-                "path": "LF 9/Netzwerkaufgaben - Erklärung und Befehle.md"
+                "title": "Netzwerkaufgaben - Erklärung und Befehle", 
+                "path": "Netzwerkaufgaben - Erklärung und Befehle.md"
             },
             {
-                "title": "Rouitng Konzepte",
-                "path": "LF 9/Rouitng Konzepte.md"
+                "title": "Netzwerk-Lab Erklärungen (für totale Anfänger)", 
+                "path": "Netzwerk-Lab Erklärungen (für totale Anfänger).md"
             },
             {
-                "title": "Subnetting – Grundlagen, Beispiele & Aufgabenlösung",
-                "path": "LF 9/Subnetting – Grundlagen, Beispiele & Aufgabenlösung.md"
+                "title": "Routing Konzepte", 
+                "path": "Rouitng Konzepte.md"
             },
             {
-                "title": "VLAN + Trunk + Router-on-a-Stick – Vollständige Erklärung",
-                "path": "LF 9/VLAN + Trunk + Router-on-a-Stick – Vollständige Erklärung.md"
+                "title": "Subnetting – Grundlagen, Beispiele & Aufgabenlösung", 
+                "path": "Subnetting – Grundlagen, Beispiele & Aufgabenlösung.md"
             },
             {
-                "title": "_Befehlliste",
-                "path": "LF 9/_Befehlliste.md"
-            }
-        ]
-    },
-    {
-        "title": "Sporttheorie",
-        "path": "Sporttheorie",
-        "files": [
-            {
-                "title": "Doping",
-                "path": "Sporttheorie/Doping.md"
+                "title": "VLAN + Trunk + Router-on-a-Stick – Vollständige Erklärung", 
+                "path": "VLAN + Trunk + Router-on-a-Stick – Vollständige Erklärung.md"
             }
         ]
     },
@@ -606,18 +120,8 @@
         "path": "WSK",
         "files": [
             {
-                "title": "Privatinsolvenz – Kompakte Übersicht",
-                "path": "WSK/Privatinsolvenz – Kompakte Übersicht.md"
-            }
-        ]
-    },
-    {
-        "title": "_Klausurthemen",
-        "path": "_Klausurthemen",
-        "files": [
-            {
-                "title": "LF 6",
-                "path": "_Klausurthemen/LF 6.md"
+                "title": "Privatinsolvenz – Kompakte Übersicht", 
+                "path": "Privatinsolvenz – Kompakte Übersicht.md"
             }
         ]
     }
