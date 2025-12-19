@@ -484,14 +484,24 @@ footer a:hover {
         overflow: visible;
     }
     
-    .sidebar {
+        .sidebar {
         position: relative;
         top: 0;
+        left: 0;
         bottom: auto;
-        width: 100%;
+        margin: 0;
+        padding: 0;
+        width: 100vw !important;
+        max-width: 100vw;
         border-right: none;
         border-bottom: 1px solid var(--border-color);
         max-height: 400px;
+        box-sizing: border-box;
+    }
+
+    .sidebar select {
+        margin-top: 15px !important;
+        width: calc(100% - 40px) !important;
     }
     
     .content-area {
