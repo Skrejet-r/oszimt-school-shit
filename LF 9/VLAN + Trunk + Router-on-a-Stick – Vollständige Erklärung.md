@@ -12,6 +12,8 @@ Das Ziel ist, dass zwei PCs in verschiedenen VLANs über einen Router kommunizie
 
 # 🟦 1. VLANs erstellen
 
+![[Pasted image 20250909083238.png]]
+
 ## VLAN erstellen
 ```
 enable

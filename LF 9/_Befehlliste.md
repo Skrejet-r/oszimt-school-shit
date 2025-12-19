@@ -1,15 +1,43 @@
 
-## VLAN
-![[Pasted image 20250909083238.png]]
+| **Befehl**                                     | **Erklärung**                                             |
+| ---------------------------------------------- | --------------------------------------------------------- |
+| `enable`                                       | Wechselt in den privilegierten EXEC-Modus.                |
+| `disable`                                      | Wechselt zurück in den Benutzer EXEC-Modus.               |
+| `configure terminal`                           | Wechselt in den globalen Konfigurationsmodus.             |
+| `show running-config`                          | Zeigt die aktuelle Konfiguration des Routers/Switches.    |
+| `show startup-config`                          | Zeigt die Konfiguration, die beim Neustart geladen wird.  |
+| `copy running-config startup-config`           | Speichert die aktuelle Konfiguration im Startup-Config.   |
+| `reload`                                       | Startet das Gerät neu.                                    |
+| `show version`                                 | Zeigt Informationen zur Hardware- und Softwareversion.    |
+| `show interfaces`                              | Zeigt den Status aller Interfaces an.                     |
+| `show ip interface brief`                      | Zeigt eine zusammengefasste Übersicht der Interfaces.     |
+| `show vlan brief`                              | Zeigt eine Übersicht der VLANs auf einem Switch.          |
+| `vlan <ID>`                                    | Erstellt oder bearbeitet ein VLAN.                        |
+| `name <VLAN-Name>`                             | Setzt den Namen eines VLANs.                              |
+| `interface <interface>`                        | Wechselt in den Interface-Konfigurationsmodus.            |
+| `switchport mode access`                       | Setzt den Switchport auf Access-Modus.                    |
+| `switchport access vlan <ID>`                  | Weist einem Port ein VLAN zu.                             |
+| `show mac address-table`                       | Zeigt die MAC-Adresstabelle an.                           |
+| `show ip route`                                | Zeigt die Routing-Tabelle an.                             |
+| `ip route <Ziel-IP> <Subnetz-Maske> <Gateway>` | Fügt eine statische Route hinzu.                          |
+| `ping <IP-Adresse>`                            | Sendet einen Ping-Befehl, um die Konnektivität zu testen. |
+| `traceroute <IP-Adresse>`                      | Verfolgt den Pfad zu einer Ziel-IP-Adresse.               |
+| `show ip dhcp binding`                         | Zeigt die DHCP-Bindungen an.                              |
+| `ip dhcp pool <Name>`                          | Erstellt einen DHCP-Pool.                                 |
+| (config)# interface fa0/1                      | oder → einzelne Ports konfigurieren                       |
+| (config)# interface range fa0/1 – 10           | → Port Bereiche konfigurieren                             |
+| (config-if-range)# duplex {full                | half                                                      |
+| (config-if-range)# speed {10                   | 100                                                       |
+| (config-if-range)# shutdown                    | → Ports können abgeschaltet werden                        |
+| (config)# interface Vlan1                      | → Standard-Verwaltungsinterface                           |
+| (config-if)# ip address x.x.x.x y.y.y.y        |                                                           |
+| (config-if)# exit                              | → x – IP; y – Netmask                                     |
+| (config)# ip default-gateway <Gateway-IP>      | → um aus einem anderen Netz administrieren zu können      |
+| (config)# line vty 0 15                        |                                                           |
+| (config-line)# password <pwd>                  |                                                           |
+| (config-line)# login                           | → Anzahl der vty's ist abhängig vom Modell                |
 
-| Befehl                                                                                                                                 | Erklärung                                                                                                                                                                                       |
-| -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| _(config)# vlan { vlan-id \| vlan-range }                                                                                              | VLAN-Konifgurations-Modus betreten oder Erzeugen eines neuen VLANs                                                                                                                              |
-| _switch(config-vlan)# name vlan-name                                                                                                   | Benennung eines VLANs                                                                                                                                                                           |
-| _# show vlan                                                                                                                           | Anzeige d. vorhandenen VLANs                                                                                                                                                                    |
-| _#conf t<br>(config)# interface fastethernet 0/2<br>(config-if)# switchport mode access<br>(config-if)# switchport access vlan 2<br>   | Zuweisung des Ports fastethernet 0/2 zum VLAN 2.  <br>Beim Befehl „switchport mode access“ wird festgelegt, dass der Port nur für ein einziges VLAN (hier das mit der ID2) benutzt werden kann. |
-| _#conf t<br>(config)# interface fastethernet 0/4<br>(config)# no switchport access vlan 2<br>                                          | Entfernen eines Ports aus dem VLAN                                                                                                                                                              |
-| _(conf)# no vlan 3<br>                                                                                                                 | Entfernen eines VLANs                                                                                                                                                                           |
-| _SwitchA(config)# interface fastethernet 0/1<br>(config-if)# switchport encapsulation dot1q (config-if)# switchport mode trunk<br><br> | Alt.(auf 3560): # switchport trunk encapsulation dot1q<br><br>Im PT u. bei älteren Switchen (2950) funktioniert die Umstellung auf den encapsulation Mode nicht. Default ist hier dot1q.        |
-| _#show interface fastethernet 0/1 switchport                                                                                           | Trunk-Konfiguration überprüfen                                                                                                                                                                  |
-|                                                                                                                                        |                                                                                                                                                                                                 |
+
+
+
+
