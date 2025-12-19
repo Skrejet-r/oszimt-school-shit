@@ -5,6 +5,8 @@
 
 * {
 	font-family: 'Montserrat';
+    scrollbar-width: thin;
+    scrollbar-color: #333;
 }
 html {
 scroll-behavior: smooth;
@@ -16,20 +18,23 @@ body {
 /* -- Neuer Header Style -- */
 header {
     /* 1. Visuelle Verbesserung & Barrierefreiheit */
-    background-color: #333; /* Dunkler Hintergrund */
+     /* Dunkler Hintergrund  background-color: #333;*/
+     background-color: #9B120F;
+     border-radius: 0px;
     color: #ffffff;         /* Heller Text für hohen Kontrast (WCAG AA/AAA) */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Leichter Schatten für "Schwebe-Effekt" */
+     /* Leichter Schatten für "Schwebe-Effekt" box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
 
     /* 2. Layout und Positionierung */
     padding: 15px 30px; /* Mehr vertikaler und horizontaler Raum */
     
     position: sticky; /* Beibehalten: Klebt oben beim Scrollen */
-    top: 0;
+    top: 0px;
+    left: 0px;
     z-index: 1000; /* Wichtig: Stellt sicher, dass der Header über dem Hauptinhalt liegt */
     
     display: flex;
     flex-direction: row;
-    justify-content: space-between; /* H1 links, Navigation rechts */
+    justify-content: space-around; /* H1 links, Navigation rechts */
     align-items: center; /* Vertikale Zentrierung von Text und Navigationslinks */
 }
 
@@ -44,7 +49,6 @@ header h1 {
 header nav ul {
     list-style: none; /* Entfernt die Aufzählungszeichen */
     margin: 0;
-    padding: 0;
     display: flex; /* Links nebeneinander anordnen */
     gap: 20px; /* Abstand zwischen den Navigationspunkten */
 }
@@ -66,40 +70,45 @@ header nav ul li a:focus {
 
 /* -- Neuer Footer Style -- */
 footer {
-    /* 1. Positionierung: Am Ende des Body-Flows, NICHT absolut */
-    /* Absolute Positionierung entfernt, um bei langem Inhalt überlappende Fehler zu vermeiden */
-    margin-top: 40px; /* Zusätzlicher Abstand zum Hauptinhalt */
-    padding: 20px 20px; /* Etwas mehr vertikaler und horizontaler Raum */
-    
-    /* 2. Hintergrund und Trennlinie */
-    background-color: #f8f8f8; /* Leichter grauer Hintergrund für Abgrenzung */
-    color: #333; /* Dunkle Schrift */
-    border-top: 1px solid #ccc; /* Weichere Trennlinie */
-
-    /* 3. Layout und Zentrierung */
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    text-align: center; /* Text innerhalb des Fußes zentrieren */
-
-    /* 4. Schrift und Links */
-    font-size: 0.9em; /* Etwas kleiner für die Fußzeile */
+  /* 1. Positionierung: Am Ende des Body-Flows, NICHT absolut */
+  margin: 40px 0 0 0; /* Abstand zum Hauptinhalt nur oben */
+  padding: 20px;
+  width: 100%;
+  
+  /* 2. Hintergrund und Trennlinie */
+  background-color: rgba(248, 248, 248, 0.23); /* rgba statt hex mit 'a' */
+  backdrop-filter: blur(5px);
+  color: #333;
+  border-top: 1px solid #ccc;
+  
+  /* 3. Layout und Zentrierung */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Für besseres Responsive-Verhalten */
+  justify-content: center; /* Zentriert den Inhalt horizontal */
+  align-items: center; /* Zentriert den Inhalt vertikal */
+  gap: 10px; /* Abstand zwischen Flex-Items */
+  
+  /* 4. Schrift */
+  font-size: 0.9em;
 }
 
-/* Optional: Styling für Links im Footer */
+/* Links im Footer */
 footer a {
-    color: #0056b3; /* Dunkelblau, kontrastreich */
-    text-decoration: none;
-    padding: 0 5px; /* Abstand zwischen den Links */
+  color: #0056b3;
+  text-decoration: none;
+  padding: 0 5px;
+  transition: color 0.3s ease; /* Sanfter Übergang */
 }
 
 footer a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+  color: #003d82; /* Etwas dunkler beim Hover */
 }
 
-/* Optional: Styling für die Paragraphen im Footer (falls mehrere da sind) */
+/* Paragraphen im Footer */
 footer p {
-    margin: 5px 0; /* Weniger Abstand zwischen den Zeilen */
+  margin: 5px 0;
 }
 
 /* LAYOUT: Main Content und Sidebar */
@@ -111,14 +120,40 @@ main {
 }
 
 .sidebar {
+    z-index: 999;
+    position:fixed;
+    top: 80px; /* Abstand vom oberen Rand beim Scrollen */
+    left: 0;
     width: 250px;
+    height: calc(100vh - 80px); /* Volle Höhe minus Header-Höhe */
+    overflow-y: auto; /* Ermöglicht vertikales Scrollen, wenn der Inhalt
     flex-shrink: 0; /* Verhindert, dass die Sidebar schrumpft */
     padding-right: 15px;
+    background-color: white;
     border-right: 1px solid #ddd;
+    border-radius: 25px 25px 0px 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .content-area {
+    overflow: scroll;
+    position: fixed;
+    width: calc(100vw - 300px - 75px);
+    left: 300px;
+    top: 80px;
+    padding: 25px;
     flex-grow: 1; /* Lässt den Inhaltsbereich den verbleibenden Platz einnehmen */
+    height: calc(100vh - 80px - 25px);
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ddd;
+    border-radius: 25px 25px 0px 0px;
+}
+#md-content {
+    max-width: 100%; /* Maximale Breite für bessere Lesbarkeit */
+    max-height: 100%;
+    margin: auto; /* Zentriert den Inhalt horizontal */
+    overflow: auto;
 }
 
 /* TOC STYLES */
@@ -198,6 +233,15 @@ main {
         border-bottom: 1px solid #ddd;
         padding-bottom: 20px;
     }
+    
+    #search-input {
+    width: calc(100% - 22px); /* Volle Breite mit etwas Padding */
+    padding: 10px;
+    margin-bottom: 20px; /* Abstand zur Liste */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
     
     /* CONTENT BEREICH ANPASSUNGEN */
     .content-area {
